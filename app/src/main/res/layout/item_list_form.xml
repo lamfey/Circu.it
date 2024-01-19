@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA">
+
+    <ImageView
+        android:id="@+id/enterImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/enterName"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/enterImage2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/baseline_image_24"
+        app:layout_constraintStart_toStartOf="@+id/enterName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/enterName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:hint="Item Name"
+        android:paddingLeft="20sp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/custom_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColorHint="#000"
+        android:textColor="#000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/enterDescription"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Description"
+        android:paddingLeft="20sp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custom_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColorHint="#000"
+        app:layout_constraintTop_toBottomOf="@+id/enterPrice"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/enterPrice"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="50dp"
+        android:hint="Price"
+        android:paddingLeft="20sp"
+        android:background="@drawable/custom_input"
+        android:textColorHint="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="#000"
+        app:layout_constraintTop_toBottomOf="@+id/enterName" />
+
+    <ImageButton
+        android:id="@+id/takePicture"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/baseline_camera_alt_24"
+        app:layout_constraintBottom_toBottomOf="@+id/enterImage"
+        app:layout_constraintStart_toEndOf="@+id/enterImage"
+        app:layout_constraintTop_toTopOf="@+id/enterImage" />
+
+    <Button
+        android:id="@+id/saveitem"
+        android:layout_width="286dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#46EA74"
+        android:padding="10dp"
+        android:text="save"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterDescription" />
+</androidx.constraintlayout.widget.ConstraintLayout>

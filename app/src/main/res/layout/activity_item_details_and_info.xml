@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        tools:context=".ItemDetailsAndInfo">
+
+
+        <ImageView
+            android:id="@+id/imagePreview"
+            android:layout_width="412dp"
+            android:layout_height="401dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/textarea"
+            android:focusable="false"
+            android:inputType="none"
+            android:textStyle="bold"
+            android:textSize="29sp"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagePreview" />
+
+        <EditText
+            android:id="@+id/editPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/textarea"
+            android:focusable="false"
+            android:inputType="none"
+            android:textStyle="bold"
+            android:textSize="29sp"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editName" />
+
+        <EditText
+            android:id="@+id/editDescription"
+            android:layout_width="match_parent"
+            android:layout_height="143dp"
+            android:background="@drawable/textarea"
+            android:focusable="false"
+            android:inputType="none"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editPrice"
+            android:gravity="top"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/editDescription"
+            app:flow_verticalAlign="center">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="79dp"
+                android:backgroundTint="#0088FF"
+                android:ellipsize="none"
+                android:onClick="sendAsSMS"
+                android:scrollHorizontally="false"
+                android:text="Send As Message"
+                android:textAllCaps="false"
+                android:layout_margin="10dp"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/editItemButtonToggle"
+                android:layout_width="match_parent"
+                android:layout_height="79dp"
+                android:backgroundTint="#46EA74"
+                android:ellipsize="none"
+                android:maxLines="100"
+                android:onClick="EditITemToggleClick"
+                android:padding="10dp"
+                android:scrollHorizontally="false"
+                android:text="Edit Item"
+                android:layout_margin="10dp"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:paddingLeft="50dp"/>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

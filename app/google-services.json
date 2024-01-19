@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "853930420277",
+    "firebase_url": "https://circuit-b2f42-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "circuit-b2f42",
+    "storage_bucket": "circuit-b2f42.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853930420277:android:3c92a54bd8280697d6297c",
+        "android_client_info": {
+          "package_name": "com.example.circuit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853930420277-9olrp3k7u8ol79r2bhv15giq4ehcs4ap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCX555QJNS1w9bbZa9Yfl_N599N_-LXDjc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853930420277-9olrp3k7u8ol79r2bhv15giq4ehcs4ap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
